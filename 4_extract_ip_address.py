@@ -19,7 +19,7 @@ IP de Origem: 72.31.45.98
 Página Acessada: /pagina-final
 """
 
-ip_pattern = r"(\d{1,3}\.)(\d{1,3}\.)(\d{1,3}\.)(\d{1,3})"
+ip_pattern = r"\b(?:\d{1,3}\.){3}\d{1,3}\b"
 
 
 def extract_ips(text: str):
